@@ -1,0 +1,41 @@
+{
+  "name": "project-base",
+  "description": "Project Base",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:toastercup/angularjs-meetup-presentations.git"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.5.5",
+    "gulp-template": "^0.1.1",
+    "gulp-angular-templatecache": "^1.1.0",
+    "gulp-ngmin": "^0.1.2",
+    "gulp-concat": "^2.1.7",
+    "gulp-header": "^1.0.2",
+    "gulp-footer": "^1.0.4",
+    "gulp-htmlmin": "^0.1.2",
+    "gulp-uglify": "^0.2.1",
+    "gulp-cssmin": "^0.1.3",
+    "gulp-jshint": "^1.5.0",
+    "tiny-lr": "0.0.5",
+    "gulp-jscs": "^0.3.2",
+    "gulp-watch": "^0.5.2",
+    "gulp-clean": "^0.2.4",
+    "gulp-livereload": "^1.2.0",
+    "gulp-ruby-sass": "^0.4.0",
+    "glob": "^3.2.9",
+    "gulp-notify": "^1.1.1",
+    "underscore": "^1.6.0",
+    "q": "^1.0.0",
+    "gulp-plumber": "^0.5.6",
+    "karma": "^0.12.0",
+    "gulp-karma": "0.0.3",
+    "karma-jasmine": "^0.1.5"
+  },
+  "engines": {
+    "node": ">= 0.9"
+  }
+}

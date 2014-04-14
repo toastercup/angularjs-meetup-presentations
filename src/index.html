@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <title ng-bind="pageTitle"></title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% _.forEach(styles, function(style) { %>
+    <link rel="stylesheet" href="<%- style %>"><% }); %>
+    <% _.forEach(headScripts, function(script) { %>
+    <script src="<%- script %>"></script><% }); %>
+  </head>
+  <body ng-controller="AppCtrl">
+    <div ui-view></div>
+    <% _.forEach(scripts, function(script) { %>
+    <script src="<%- script %>"></script><% }); %>
+  </body>
+</html>
