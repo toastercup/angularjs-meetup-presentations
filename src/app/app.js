@@ -1,13 +1,24 @@
 var module = angular.module('app', [
-  'ui.router',
-  'app.states',
+  'ngRoute',
   'app.settings',
-  'app.constants'
+  'app.constants',
+  'app.controllers.category'
 ]);
 
-module.config(function($urlRouterProvider) {
-  $urlRouterProvider.otherwise('/');
+module.config(function ($routeProvider) {
+  $routeProvider.
+    when('/category', {
+      templateUrl: 'category.tpl.html',
+      controller: 'CategoryCtrl'
+    }).
+    when('/category/:categoryId', {
+      templateUrl: 'category-detail.tpl.html',
+      controller: 'CategoryDetailCtrl'
+    }).
+    otherwise({
+      redirectTo: '/category'
+    });
 });
 
-module.controller('AppCtrl', function($scope, $state, EVENTS) {
+module.controller('AppCtrl', function ($scope, $state, EVENTS) {
 });
